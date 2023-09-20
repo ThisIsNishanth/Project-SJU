@@ -1,1 +1,1 @@
-A simple website that shows real-time forecasting data.
+A website that shows real-time forecasting data.
