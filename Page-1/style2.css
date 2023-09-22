@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.nav {
+    background-color: #001219;
+    color: white;
+    height: 174px;
+    padding: 30px
+}
+
+h1.center {
+    text-align: center;
+}
+
+.search {
+    width: 616px;
+    height: 34px;
+    margin: 25px 300px 41px;
+    border-radius: 5px;
+    border: 3px solid #ecf39e;
+    padding: 22px;
+}
+
+input::placeholder {
+    font-weight: bold;
+    opacity: 0.8;
+    color: gray;
+    font-size: 10px;
+}
+
+.table {
+    background-color: #e9d8a6;
+    height: 400px;
+
+}
+
+.row-column {
+    position: absolute;
+    padding: 24px;
+    width: 2203px;
+    left: 68px;
+    top: 197px;
+
+}
+
+table {
+    width: 50%;
+    border-spacing: 0;
+    padding: 38px;
+    width: 1219px;
+    position: absolute;
+    left: 20px;
+    text-align: center;
+
+}
+
+th,
+td {
+    border: 1px solid black;
+    background-color: #ecf39e;
+    height: 55px;
+    text-align: center;
+}
+
+th {
+    background-color: #ecf39e;
+}
+
+tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+
+}
+
+tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 4px 2px -2px #001219;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 4px 2px -2px #001219;
+}

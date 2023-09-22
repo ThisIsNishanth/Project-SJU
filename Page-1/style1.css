@@ -77,6 +77,12 @@ button:hover{
     background-color: #dfdada;
 
 }
+
+
+button a {
+    color: #0d0c0c;
+    text-decoration: none;
+}
 .box img {
     position: absolute; 
     /* top: 50px;  */
