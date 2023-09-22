@@ -14,8 +14,7 @@ body {
     padding: 63px;
     width: 90%;
     min-height: 100vh;
-    align-items: flex-start; 
-    
+    align-items: flex-start;    
 }
 
 .box {
@@ -48,12 +47,13 @@ header {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 22px;
     margin: 0;
     font-family: 'Lato', sans-serif;
     text-align: left;
-    font-weight: bold;
+    font-weight:bolder;
 }
+
 .box h2{
     font-weight:bolder; 
     color: #0d0c0c;
@@ -79,7 +79,7 @@ button:hover{
 }
 .box img {
     position: absolute; 
-    top: 50px; 
+    /* top: 50px;  */
     right: 10px; 
     max-width: 50px;
     max-height: 50px;
@@ -88,7 +88,5 @@ button:hover{
     font-size: 11px; 
     line-height: 0.1;
     color: #0d0c0c;
-    font-family: 'Lato', sans-serif;
-    
-   
+    font-family: 'Lato', sans-serif;   
 }
