@@ -29,18 +29,20 @@
                 const windSpeed = data.current.wind_kph;
                 const conditionText = data.current.condition.text;
                 const conditionIcon = data.current.condition.icon;
-    
+                 
                 // Create a box for the city with weather information
                 const cityBox = document.createElement('div');
                 cityBox.className = 'box';
                 cityBox.innerHTML = `
-                    <h2>${city}</h2>
-                    <p>${conditionText}</p>
+                    <h2 style = "font-weight: 700; letter-spacing: 1px">${city}</h2>
+                    <b><p style  = "font-size:11.5px; margin-top:6px; text-transform: uppercase;" >${conditionText}</p></b>
                     <img src="${conditionIcon}" alt="${conditionText}" />
-                    <p style="text-align: left;"> ${temperatureCelsius} Degree Celcius</p>
+                    <p style="text-align: left;"> ${temperatureCelsius} Degree Celsius</p>
                     <p style="text-align: left;"> ${windSpeed} KPH Wind</p>
                     <p style="text-align: left;">Humidity- ${humidity}</p>
                 `;
+
+                cityBox.style.marginTop = "-30px";
     
                 // Append the city box to the weatherInfo div
                 weatherInfo.appendChild(cityBox);
