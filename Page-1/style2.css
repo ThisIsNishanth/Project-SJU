@@ -22,7 +22,7 @@ body {
     background-color: #001219;
     color: white;
     height: 174px;
-    padding: 30px
+    padding: 30px;
 }
 
 h1.center {
@@ -40,7 +40,7 @@ h1.center {
 
 input::placeholder {
     font-weight: bold;
-    opacity: 0.8;
+    opacity: 0.6;
     color: gray;
     font-size: 10px;
 }
@@ -83,7 +83,7 @@ td {
 
 th {
     background-color: #F8F9FA;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 20px;
     border-top: 1.5px solid black;
 }
