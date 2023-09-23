@@ -3,7 +3,7 @@
         const cities = [
             'BENGALURU',
             'MUMBAI',
-            'CHENNAI',
+            'PUNE',
             'DELHI',
             'NEW YORK',
             'WASHINGTON',
