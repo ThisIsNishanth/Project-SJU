@@ -34,7 +34,7 @@ h1.center {
     height: 34px;
     margin: 25px 300px 41px;
     border-radius: 5px;
-    border: 3px solid #F8F9FA;
+    border: 3px solid #e9d8a6;
     padding: 22px;
 }
 
@@ -83,7 +83,7 @@ td {
 
 th {
     background-color: #F8F9FA;
-    font-weight: bolder;
+    font-weight: 900;
     font-size: 20px;
     border-top: 1.5px solid black;
 }
