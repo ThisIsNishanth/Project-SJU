@@ -1,4 +1,6 @@
 let userInput = document.querySelector("#city-input");
+const button = document.querySelector("button");
+
 userInput.addEventListener("keypress", (e) => {
     if (userInput.value == ""){
         emptyInput();
@@ -8,8 +10,6 @@ userInput.addEventListener("keypress", (e) => {
         Weather();
     }
 })
-
-const button = document.querySelector("button");
 
 button.addEventListener("click", ()=>{
     if(userInput.value == ""){
@@ -63,11 +63,9 @@ async function Weather() {
         let humidity = weatherData.data.current.humidity;
         let cloud = weatherData.data.current.cloud;
         console.log(weatherData,temp_c,mainText,wind_kph);
-        tableAppend(mainText,temp_c,wind_dir,wind_kph,humidity,cloud)
-        // windDirectionConv(wind_dir);
-        // sectionAppend();
+        tableAppend(mainText,temp_c,wind_dir,wind_kph,humidity,cloud);
     } catch (e) {
+        alert("Wrong city entered. Enter the correct city:");
         console.log("Error:" + e);
-        // section.append(error);
     }
 }
