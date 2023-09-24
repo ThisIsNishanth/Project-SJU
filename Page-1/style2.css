@@ -30,13 +30,33 @@ h1.center {
 }
 
 .search {
-    width: 616px;
+    width:443px;
     height: 34px;
-    margin: 25px 300px 41px;
+    margin: 25px 300px;
     border-radius: 5px;
-    border: 3px solid #e9d8a6;
+    border: 3px solid #ecf39e;
     padding: 22px;
 }
+
+.button{
+    position: absolute;
+    top: 89px;
+    right: 26%;
+    background-color: #FCBF49;
+    color: #001219;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease
+}
+.button:hover{ 
+    background-color:#f1ab1f ;
+}
+
 
 input::placeholder {
     font-weight: bold;

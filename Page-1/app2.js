@@ -1,9 +1,40 @@
 let userInput = document.querySelector("#city-input");
 userInput.addEventListener("keypress", (e) => {
+    if (userInput.value == ""){
+        emptyInput();
+        return;
+    }
     if (e.key == "Enter") {
         Weather();
     }
 })
+
+const button = document.querySelector("button");
+
+button.addEventListener("click", ()=>{
+    if(userInput.value == ""){
+        emptyInput();
+        return;
+    }
+    Weather();
+    tableAppend();
+})
+
+function emptyInput(){
+    let condition = document.querySelector("#condition");
+    let celsiustempc = document.querySelector("#temp");
+    let windSpeed = document.querySelector("#wind");
+    let windir = document.querySelector("#direction");
+    let humidValue = document.querySelector("#humidity");
+    let cloudcover = document.querySelector("#cloud");
+    condition.innerText = "";
+    celsiustempc.innerText = "";
+    windSpeed.innerText = "";
+    windir.innerText = "";
+    humidValue.innerText = "";
+    cloudcover.innerText = "";
+}
+
 
 function tableAppend(mainText,temp_c,wind_dir,wind_kph,humidity,cloud){
     let condition = document.querySelector("#condition");
