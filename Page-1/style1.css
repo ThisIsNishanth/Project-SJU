@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #E9D8A6;
+    background-color: #001219;
 }
 
 .container {
@@ -13,7 +13,7 @@ body {
     background-color: #E9D8A6;
     padding: 63px;
     width: 90%;
-    min-height: 95vh;
+    min-height: 100vh;
     align-items: flex-start;    
 }
 
@@ -88,7 +88,7 @@ h1 {
     padding-bottom: 25px;
     margin-left: 42%;
     position: relative;
-    bottom: 75px;
+    bottom: 40px;
     border: none;
 }
 #e-button2:hover{
@@ -104,11 +104,22 @@ h1 {
     transition: background-color 0.3s ease;
 }
 
+#ending-credit{
+    color: #dfdada;
+    text-align: center;
+    font-family: 'Lato',sans-serif;
+    font-size: smaller;
+    height: 40px;
+    margin-top: 25px;
+}
+
 .main-copy {
     width: 100%;
     height: 500px;
     text-align: center;
     background-color: #001219;
+    -webkit-animation: fade-in-right 0.8ss cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-right 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .main-copy .headline {
@@ -141,6 +152,20 @@ h1 {
     top: 180px;
     right: 395px;
 }
+
+ @-webkit-keyframes fade-in-right {
+    0% {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
 button a {
     color: #0d0c0c;
     text-decoration: none;

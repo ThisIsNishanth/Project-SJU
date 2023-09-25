@@ -2,7 +2,7 @@ let userInput = document.querySelector("#city-input");
 const button = document.querySelector("button");
 
 userInput.addEventListener("keypress", (e) => {
-    if (userInput.value == ""){
+    if (userInput.value == "") {
         emptyInput();
         return;
     }
@@ -11,16 +11,16 @@ userInput.addEventListener("keypress", (e) => {
     }
 })
 
-button.addEventListener("click", ()=>{
-    if(userInput.value == ""){
+button.addEventListener("click", () => {
+    if (userInput.value == "") {
         emptyInput();
         return;
+    } else {
+        Weather();
     }
-    Weather();
-    tableAppend();
 })
 
-function emptyInput(){
+function emptyInput() {
     let condition = document.querySelector("#condition");
     let celsiustempc = document.querySelector("#temp");
     let windSpeed = document.querySelector("#wind");
@@ -36,7 +36,7 @@ function emptyInput(){
 }
 
 
-function tableAppend(mainText,temp_c,wind_dir,wind_kph,humidity,cloud){
+function tableAppend(mainText, temp_c, wind_dir, wind_kph, humidity, cloud) {
     let condition = document.querySelector("#condition");
     let celsiustempc = document.querySelector("#temp");
     let windSpeed = document.querySelector("#wind");
@@ -62,8 +62,8 @@ async function Weather() {
         console.log(wind_dir);
         let humidity = weatherData.data.current.humidity;
         let cloud = weatherData.data.current.cloud;
-        console.log(weatherData,temp_c,mainText,wind_kph);
-        tableAppend(mainText,temp_c,wind_dir,wind_kph,humidity,cloud);
+        console.log(weatherData, temp_c, mainText, wind_kph);
+        tableAppend(mainText, temp_c, wind_dir, wind_kph, humidity, cloud);
     } catch (e) {
         alert("Wrong city entered. Enter the correct city:");
         console.log("Error:" + e);
