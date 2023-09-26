@@ -7,7 +7,7 @@
             'DELHI',
             'NEW YORK',
             'WASHINGTON',
-            'SAN FRANSISCO',
+            'SAN FRANCISCO',
             'SEATTLE',
             'BARCELONA',
             'LONDON',
