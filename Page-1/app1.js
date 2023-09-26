@@ -12,7 +12,15 @@
             'BARCELONA',
             'LONDON',
             'MADRID',
-            'SYDNEY'
+            'SYDNEY',
+            'CHENNAI',
+            'DUBAI',
+            'UDUPI',
+            'CALIFORNIA',
+            'AMSTERDAM',
+            'PARIS',
+            'TORONTO',
+            'RIO'
         ];
     
         const weatherInfo = document.getElementById('cont');
@@ -42,7 +50,9 @@
                     <p style="text-align: left;">Humidity- ${humidity}</p>
                 `;
 
-                cityBox.style.marginTop = "-30px";
+                // cityBox.style.marginTop = "-15px";
+                weatherInfo.style.marginTop = "-30px";
+
     
                 // Append the city box to the weatherInfo div
                 weatherInfo.appendChild(cityBox);

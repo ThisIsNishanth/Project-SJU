@@ -82,10 +82,11 @@ input::placeholder {
 table {
     width: 50%;
     border-spacing: 0;
-    padding: 38px;
+    padding: 40px;
     width: 900px;
     position: absolute;
     left: 200px;
+    margin-top: 2px;
     text-align: center;
 }
 
