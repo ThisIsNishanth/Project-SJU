@@ -152,7 +152,7 @@ h1 {
 	padding-top: 50px;
 	position: relative;
 	right: 0;
-	top:-625px;
+	top:-605px;
 	z-index: -1;
 }
 
@@ -189,7 +189,7 @@ h1 {
     height: 60px;
     bottom: 60px;
     top: 250px;
-    right: 450px;
+    right: 475px;
 }
 
  @-webkit-keyframes fade-in-right {
