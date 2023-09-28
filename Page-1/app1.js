@@ -24,6 +24,16 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const weatherInfo = document.getElementById('cont');
+    const button = document.querySelector("#e-button");
+    const button2 = document.querySelector("#e-button2");
+
+    button.addEventListener('click', () => {
+        window.location.href = "index2.html";
+    })
+
+    button2.addEventListener('click', () => {
+        window.location.href = 'index2.html';
+    })
 
     const fetchWeatherData = async (city) => {
         try {

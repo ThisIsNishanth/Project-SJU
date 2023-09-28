@@ -39,6 +39,7 @@ h1.center {
     padding-right: 10px;
     text-align: center;
     border: 5px solid black;
+    border-radius: 10px;
 }
 
 .search {
@@ -117,7 +118,7 @@ table {
     width: 900px;
     position: absolute;
     left: 200px;
-    margin-top: -10px;
+    margin-top: -15px;
     text-align: center;
 
 }
@@ -144,12 +145,14 @@ td {
 th {
     border-left: 5px solid black;
     border-right: 5px solid black;
+    letter-spacing: 1px;
 }
 
 th {
     background-color: #e9ecef;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 16px;
+    height: 70px;
     border-top: 5px solid black;
 }
 
