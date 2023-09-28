@@ -45,7 +45,7 @@ function tableAppend(mainText, temp_c, wind_dir, wind_kph, humidity, cloud) {
     let cloudcover = document.querySelector("#cloud");
     console.log(condition);
     condition.innerText = `${mainText}`
-    celsiustempc.innerHTML = `${temp_c} &#x2103;` ;
+    celsiustempc.innerHTML = `${temp_c}` ;
     windSpeed.innerText = `${wind_kph}`;
     windir.innerText = `${wind_dir}`;
     humidValue.innerText = `${humidity}`;

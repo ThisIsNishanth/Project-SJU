@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 *,
 *::before,
@@ -9,65 +9,96 @@
     text-decoration: none;
     list-style-type: none;
 
+
 }
 
 
 body {
     margin: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .nav {
-    background-color: #001219;
-    color: white;
+    background-color: #a100f2;
+    color: #fcbf49;
     height: 175px;
     padding: 30px;
+
 }
 
 h1.center {
+    width: 500px;
+    color: black;
+    background-color: #FCBF49;
+    position: relative;
+    left: 375px;
+    font-size: medium;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
+    border: 5px solid black;
 }
 
 .search {
-    width:443px;
+    width: 443px;
     height: 34px;
     margin: 25px 300px;
     border-radius: 5px;
-    border: 3px solid #ecf39e;
+    border: 3px solid black;
     padding: 22px;
+    box-shadow: 5px 4px black;
+    background-color: #e9ecef;
 }
 
-.button{
+.button {
     position: absolute;
     top: 89px;
-    right: 26%;
+    right: 25%;
     background-color: #FCBF49;
     color: #001219;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Press Start 2P', cursive;
     font-weight: bold;
-    border-radius: 12px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border: none;
+    font-style: italic;
+    border: 5px solid #000000;
+    /* Added border */
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    /* Thick shadow with 10px offset */
+    padding: 10px 15px;
+    font-size: 15px;
     cursor: pointer;
-    transition: background-color 0.3s ease
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
 }
-.button:hover{ 
-    background-color:#f1ab1f ;
+
+button:active {
+    transform: scale(1.092);
+}
+
+.button:hover {
+    background-color: #f77f00;
+
+}
+
+input{
+    font-family: 'Press Start 2P', cursive;
 }
 
 
 input::placeholder {
-    font-weight: bold;
-    opacity: 0.6;
+    font-weight: 400;
+    opacity: 0.5;
     color: gray;
     font-size: 10px;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .table {
-    background-color: #e9d8a6;
+    background-color: #a100f2;
     height: 412px;
-
+    /* box-shadow: 10px 10px  black; */
 }
 
 .row-column {
@@ -86,43 +117,59 @@ table {
     width: 900px;
     position: absolute;
     left: 200px;
-    margin-top: 2px;
+    margin-top: -10px;
     text-align: center;
+
 }
+
 
 th,
 td {
     border: 0.1px solid black;
-    background-color: #F8F9FA;
+    background-color: #e9ecef;
     height: 55px;
     text-align: center;
     font-weight: 500;
-    border-left: 1.5px solid black;
-    border-right: 1.5px solid black;
+    border-left: 2.5px solid black;
+    border-right: 2.5px solid black;
+    box-shadow: 15px 8px 0px black;
+    font-size: 12px;
+}
+
+td {
+    border-left: 5px solid black;
+    border-right: 5px solid black;
 }
 
 th {
-    background-color: #F8F9FA;
-    font-weight: 600;
-    font-size: 20px;
-    border-top: 1.5px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
 }
 
+th {
+    background-color: #e9ecef;
+    font-weight: 600;
+    font-size: 15px;
+    border-top: 5px solid black;
+}
+
+
 tr:first-child th:first-child {
-    border-top-left-radius: 5px;
+    border-top-left-radius: 15px;
+
 
 }
 
 tr:first-child th:last-child {
-    border-top-right-radius: 5px;
+    border-top-right-radius: 15px;
 }
 
 tr:last-child td:first-child {
-    border-bottom-left-radius: 5px;
-    box-shadow: 0 4px 2px -2px #343a40;
+    border-bottom-left-radius: 15px;
+    border-bottom: 5px solid black;
 }
 
 tr:last-child td:last-child {
-    border-bottom-right-radius: 5px;
-    box-shadow: 0 4px 2px -2px #343a40;
+    border-bottom-right-radius: 15px;
+    border-bottom: 5px solid black;
 }
