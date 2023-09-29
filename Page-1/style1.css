@@ -39,6 +39,7 @@ body {
 
 .box:hover {
     background-color: #78cece;
+    transform: scale(1.092);
 }
 
 header {
@@ -110,8 +111,7 @@ h1 {
 #e-button2:hover{
     background-color: #f77f00;
     cursor: pointer;
-    transition: background-color 0.3s ease
-
+    transition: background-color 0.3s ease;
 }
 
 #e-button:hover{
