@@ -1,0 +1,14 @@
+{
+    "name": "project-sju",
+    "version": 2,
+    "builds": [
+      {
+        "src": "page-1/index1.html",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/page-1/index1.html" }
+    ]
+  }
+  
