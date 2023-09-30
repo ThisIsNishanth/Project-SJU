@@ -21,7 +21,7 @@ body {
 .nav {
     background-color: #a100f2;
     color: #fcbf49;
-    height: 175px;
+    height: 275px;
     padding: 30px;
 
 }
@@ -118,7 +118,7 @@ table {
     width: 900px;
     position: absolute;
     left: 200px;
-    margin-top: -15px;
+    margin-top: -115px;
     text-align: center;
 
 }
